@@ -21,6 +21,9 @@ git checkout -b juan.c.delacruz
 There is mockup included in this project located at: /app/designs directory. Your goal is to come up with a UI based on those designs. You may use any UI frameworks and tools you are comportable with. UI Data are also part of the mockup - you could just use any static data (ea. hard-coded data or static JSON data) and you don't need to do any server-side logic. 
 
 BONUS points:
+Manage to make the UI responsive.
+
+BONUS points:
 Manage to use SemanticUI as UI framework.
 
 BONUS points:
@@ -28,3 +31,10 @@ Manage to use CSS preprocessor.
 
 BONUS points:
 Implement two-way data-binding into the UI.
+
+# Submission
+Once your OK and confident with your work, push your working branch and do a [Pull Request](https://github.com/Scenario-Cloud/frontend-developer-exam/pulls) going to the 'master' branch so we can do the review.
+
+Good Luck and Happy Coding! ;)
+
+- Scenario Development Team
