@@ -1,0 +1,42 @@
+.navbar {
+	background-color: @primary;
+	.logo {
+		max-width: 45px;
+	}
+	.app-name {
+		line-height: 2.5rem;
+		border-left: 3px solid @white;
+	}
+	.dropdown-toggle::after {
+		color: @white;
+		border-top: 0.8em solid;
+		border-right: 0.6em solid transparent;
+		border-left: 0.6em solid transparent;
+	}
+	.navbar-toggler {
+		&:focus,
+		&:hover {
+			outline: none !important;
+			box-shadow: none !important;
+		}
+		.navbar-toggler-icon {
+			color: @white;
+			.line {
+				border: 1px solid white;
+				margin: 7px 0;
+			}
+		}
+	}
+	.dropdown-menu {
+		top: 110%;
+		right: 0;
+		left: auto;
+		border: none;
+		border-radius: 0;
+	}
+	.user-icon {
+		img {
+			max-width: 40px;
+		}
+	}
+}

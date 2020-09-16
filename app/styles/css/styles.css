@@ -1,0 +1,90 @@
+.navbar {
+  background-color: #033249;
+}
+.navbar .logo {
+  max-width: 45px;
+}
+.navbar .app-name {
+  line-height: 2.5rem;
+  border-left: 3px solid #fff;
+}
+.navbar .dropdown-toggle::after {
+  color: #fff;
+  border-top: 0.8em solid;
+  border-right: 0.6em solid transparent;
+  border-left: 0.6em solid transparent;
+}
+.navbar .navbar-toggler:focus,
+.navbar .navbar-toggler:hover {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.navbar .navbar-toggler .navbar-toggler-icon {
+  color: #fff;
+}
+.navbar .navbar-toggler .navbar-toggler-icon .line {
+  border: 1px solid white;
+  margin: 7px 0;
+}
+.navbar .dropdown-menu {
+  top: 110%;
+  right: 0;
+  left: auto;
+  border: none;
+  border-radius: 0;
+}
+.navbar .user-icon img {
+  max-width: 40px;
+}
+.notifications .documents .document {
+  color: gray;
+}
+.notifications .documents .document img {
+  max-width: 60px;
+}
+.notifications .documents .document p {
+  color: #979797;
+}
+.notifications .days {
+  min-height: 150px;
+}
+.notifications .days .day .circle {
+  max-width: 150px;
+  border-radius: 100%;
+  border: 8px solid #033249;
+}
+.notifications .days .day .count {
+  color: #033249;
+}
+.notifications .days .day p {
+  color: #979797;
+}
+.tables .table {
+  border-top: none !important;
+  border-bottom: 1px solid #dee2e6;
+}
+.approved-documents .approved-doc-list .approved-doc-item .wrapper {
+  background-color: #e7e7e7;
+}
+.approved-documents .approved-doc-list .approved-doc-item .wrapper .img-wrapper {
+  background-color: #fff;
+}
+.approved-documents .approved-doc-list .approved-doc-item .wrapper .doc-title {
+  cursor: pointer;
+}
+.approved-documents .approved-doc-list .approved-doc-item .wrapper .remarks {
+  color: #979797;
+}
+.footer {
+  background-color: #033249;
+}
+.btn.focus,
+.btn:focus,
+div:focus,
+div:hover {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.container {
+  max-width: 1300px;
+}
