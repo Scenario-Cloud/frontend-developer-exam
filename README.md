@@ -18,7 +18,7 @@ git checkout -b juan.c.delacruz
 
 # Requirements
 
-There is mockup included in this project located at: /app/designs directory. Your goal is to come up with a UI based on those designs. You may use any UI frameworks and tools you are comportable with. UI Data are also part of the mockup - you could just use any static data (ea. hard-coded data or static JSON data) and you don't need to do any server-side logic. 
+There is mockup included in this project located at: /app/designs directory. Your goal is to come up with a UI based on those designs. You may use any UI frameworks and tools you are comfortable with. UI Data are also part of the mockup - you could just use any static data (ea. hard-coded data or static JSON data) and you don't need to do any server-side logic. 
 
 BONUS points:
 Manage to make the UI responsive.
