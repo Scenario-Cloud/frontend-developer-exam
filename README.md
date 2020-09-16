@@ -24,7 +24,7 @@ BONUS points:
 Manage to make the UI responsive.
 
 BONUS points:
-Manage to use SemanticUI as UI framework.
+Manage to use [SemanticUI](https://semantic-ui.com/) as UI framework.
 
 BONUS points:
 Manage to use CSS preprocessor.
