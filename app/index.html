@@ -1,298 +1,253 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, user-scalable=no, initial-scale=1"
-		/>
-		<meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1" />
-		<title>Document Tracking System</title>
 
-		<!-- Bootstrap -->
-		<link
-			rel="stylesheet"
-			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-			crossorigin="anonymous"
-		/>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1" />
+	<title>Document Tracking System</title>
 
-		<!-- Style -->
-		<link rel="stylesheet" type="text/css" href="./styles/css/styles.css" />
-	</head>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
 
-	<body>
-		<div class="topbar">
-			<div class="pos-f-t">
-				<div class="collapse" id="navbarToggleExternalContent">
-					<div class="bg-dark p-4">
-						<h4 class="text-white">Collapsed content</h4>
-						<span class="text-muted">Toggleable via the navbar brand.</span>
-					</div>
+	<!-- Style -->
+	<link rel="stylesheet" type="text/css" href="./styles/css/styles.css" />
+</head>
+
+<body>
+	<div class="topbar">
+		<div class="pos-f-t">
+			<div class="collapse" id="navbarToggleExternalContent">
+				<div class="bg-dark p-4">
+					<h4 class="text-white">Collapsed content</h4>
+					<span class="text-muted">Toggleable via the navbar brand.</span>
 				</div>
-				<!-- Topbar -->
-				<nav class="navbar px-0">
-					<div class="wrapper d-flex">
-						<button
-							class="navbar-toggler border-0"
-							type="button"
-							data-toggle="collapse"
-							data-target="#navbarToggleExternalContent"
-							aria-controls="navbarToggleExternalContent"
-							aria-expanded="false"
-							aria-label="Toggle navigation"
-						>
-							<div class="navbar-toggler-icon">
-								<div class="line"></div>
-								<div class="line"></div>
-								<div class="line"></div>
-							</div>
-						</button>
-						<a href="#">
-							<img
-								src="./img/scenario_logo.png"
-								alt="Scenario logo"
-								class="logo img-fluid"
-							/>
+			</div>
+			<!-- Topbar -->
+			<nav class="navbar px-0">
+				<div class="wrapper d-flex">
+					<button class="navbar-toggler border-0" type="button" data-toggle="collapse"
+						data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false"
+						aria-label="Toggle navigation">
+						<div class="navbar-toggler-icon">
+							<div class="line"></div>
+							<div class="line"></div>
+							<div class="line"></div>
+						</div>
+					</button>
+					<a href="#">
+						<img src="./img/scenario_logo.png" alt="Scenario logo" class="logo img-fluid" />
+					</a>
+					<h1 class="app-name h4 text-white pl-3 ml-3 mb-0">
+						Document Tracker System
+					</h1>
+				</div>
+				<div class="dropdown">
+					<div class="dropdown-masked"></div>
+					<button class="btn dropdown-toggle d-flex align-items-center" type="button" id="dropdownMenuButton"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<div class="user-icon">
+							<img src="./img/profile.png" alt="User" class="img-fluid mx-2" />
+						</div>
+						<div class="user-details d-none d-md-block mr-2">
+							<p class="text-white font-weight-bold m-0">Ken Batino</p>
+							<p class="text-white font-weight-bold m-0 small">
+								Administrator
+							</p>
+						</div>
+					</button>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+						<a class="dropdown-item d-flex align-items-center py-3" href="#">
+							<img src="./img/home.png" alt="Home Icon" class="icon mr-2" />
+							HOME MENU
 						</a>
-						<h1 class="app-name h4 text-white pl-3 ml-3 mb-0">
-							Document Tracker System
-						</h1>
+						<a class="dropdown-item d-flex align-items-center py-3" href="#">
+							<img src="./img/star.png" alt="Favourites Icon" class="icon mr-2" />
+							FAVOURITES
+						</a>
+						<a class="dropdown-item d-flex align-items-center py-3" href="#">
+							<img src="./img/settings.png" alt="My Settings Icon" class="icon mr-2" />
+							MY SETTINGS
+						</a>
+						<a class="dropdown-item d-flex align-items-center py-3" href="#">
+							<img src="./img/info.png" alt="System Info Icon" class="icon mr-2" />
+							SYSTEM INFO
+						</a>
+						<a class="dropdown-item d-flex align-items-center py-3" href="#">
+							<img src="./img/logout.png" alt="Logout Icon" class="icon mr-2" />
+							LOGOUT
+						</a>
 					</div>
-					<div class="dropdown">
-						<button
-							class="btn dropdown-toggle d-flex align-items-center"
-							type="button"
-							id="dropdownMenuButton"
-							data-toggle="dropdown"
-							aria-haspopup="true"
-							aria-expanded="false"
-						>
-							<div class="user-icon">
-								<img
-									src="./img/profile.png"
-									alt="User"
-									class="img-fluid mx-2"
-								/>
-							</div>
-							<div class="user-details d-none d-md-block mr-2">
-								<p class="text-white font-weight-bold m-0">Ken Batino</p>
-								<p class="text-white font-weight-bold m-0 small">
-									Administrator
-								</p>
-							</div>
-						</button>
-						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-							<a class="dropdown-item" href="#">Action</a>
-							<a class="dropdown-item" href="#">Another action</a>
-							<a class="dropdown-item" href="#">Something else here</a>
-						</div>
-					</div>
-				</nav>
-			</div>
+				</div>
+			</nav>
 		</div>
-		<!-- Main content -->
-		<div class="main container pt-5">
-			<div class="row notifications">
-				<div class="col-lg-6 documents mt-3 mb-5">
-					<div class="row">
-						<div class="col-4 document new-documents">
-							<div
-								class="wrapper d-flex justify-content-center align-items-center mb-2"
-							>
-								<h3 class="count h1 font-weight-bold m-0 mr-2">8</h3>
-								<img
-									src="./img/bell.png"
-									alt="New Documents Icon"
-									class="img-fluid"
-								/>
-							</div>
-							<p class="text-center">NEW DOCUMENTS</p>
-						</div>
-						<div class="col-4 document delayed-documents">
-							<div
-								class="wrapper d-flex justify-content-center align-items-center mb-2"
-							>
-								<h3 class="count h1 font-weight-bold m-0 mr-2">10</h3>
-								<img
-									src="./img/alert.png"
-									alt="New Documents Icon"
-									class="img-fluid"
-								/>
-							</div>
-							<p class="text-center">DELAYED DOCUMENTS</p>
-						</div>
-						<div class="col-4 document new-attachments">
-							<div
-								class="wrapper d-flex justify-content-center align-items-center mb-2"
-							>
-								<h3 class="count h1 font-weight-bold m-0 mr-2">15</h3>
-								<img
-									src="./img/attach.png"
-									alt="New Documents Icon"
-									class="img-fluid"
-								/>
-							</div>
-							<p class="text-center">NEW ATTACHMENTS</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6 days text-center mb-5">
-					<div class="row align-items-stretch h-100">
-						<div class="col-4 day today">
-							<div
-								class="circle d-flex justify-content-center align-items-center h-100 w-100 m-auto"
-							>
-								<div class="wrapper">
-									<h3 class="count h1 font-weight-bold m-0 mr-2">12</h3>
-									<p class="text-center">TODAY</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-4 day 7-days">
-							<div
-								class="circle d-flex justify-content-center align-items-center h-100 w-100 m-auto"
-							>
-								<div class="wrapper">
-									<h3 class="count h1 font-weight-bold m-0 mr-2">29</h3>
-									<p class="text-center">7 DAYS</p>
-								</div>
-							</div>
-						</div>
-						<div class="col-4 day 30-days">
-							<div
-								class="circle d-flex justify-content-center align-items-center h-100 w-100 m-auto"
-							>
-								<div class="wrapper">
-									<h3 class="count h1 font-weight-bold m-0 mr-2">88</h3>
-									<p class="text-center">30 DAYS</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row tables mb-5">
-				<div class="col-lg-6">
-					<table class="pending table table-striped">
-						<thead>
-							<tr>
-								<th class="h3 pl-0">Pending</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>CORR00001556 - Memo for work schedule changes</td>
-							</tr>
-							<tr>
-								<td>CORR00001557 - Memo for recent changes on work attire</td>
-							</tr>
-							<tr>
-								<td>CORR00001577 - Letter for Department Head (II)</td>
-							</tr>
-							<tr>
-								<td>CORR00001556 - Letter for Structural Team</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<div class="col-lg-6">
-					<table class="in-progress table table-striped">
-						<thead>
-							<tr>
-								<th class="h3 pl-0">In Progress</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>RFI00001122 - Request to review recent plan changes</td>
-							</tr>
-							<tr>
-								<td>RFI00001123 - Request for Information for ABP Tower II</td>
-							</tr>
-							<tr>
-								<td>RFI00001155 - Request for Information re: PA Building</td>
-							</tr>
-							<tr>
-								<td>RFI00001156 - Request to review recent schedule changes</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-			</div>
-			<div class="approved-documents mb-5">
-				<h3 class="h3">Approved Documents</h3>
-				<div class="row approved-doc-list">
-					<div class="col-md-6 col-lg-3 approved-doc-item mb-3">
-						<div class="wrapper text-center p-3 rounded">
-							<div class="img-wrapper p-3 mb-2">
-								<img src="./img/stamp.png" alt="" class="img-fluid" />
-							</div>
-							<a class="doc-title font-weight-bold text-primary"
-								>DOC000001996</a
-							>
-							<p class="remarks font-weight-bold">Approved with Comments</p>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-3 approved-doc-item mb-3">
-						<div class="wrapper text-center p-3 rounded">
-							<div class="img-wrapper p-3 mb-2">
-								<img src="./img/stamp.png" alt="" class="img-fluid" />
-							</div>
-							<a class="doc-title font-weight-bold text-primary"
-								>CORR000001957</a
-							>
-							<p class="remarks font-weight-bold">Approved with Comments</p>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-3 approved-doc-item mb-3">
-						<div class="wrapper text-center p-3 rounded">
-							<div class="img-wrapper p-3 mb-2">
-								<img src="./img/stamp.png" alt="" class="img-fluid" />
-							</div>
-							<a class="doc-title font-weight-bold text-primary">SI000001996</a>
-							<p class="remarks font-weight-bold">Approved without Comments</p>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-3 approved-doc-item mb-3">
-						<div class="wrapper text-center p-3 rounded">
-							<div class="img-wrapper p-3 mb-2">
-								<img src="./img/stamp.png" alt="" class="img-fluid" />
-							</div>
-							<a class="doc-title font-weight-bold text-primary"
-								>SCHED000001996</a
-							>
-							<p class="remarks font-weight-bold">Approved with Comments</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Footer -->
-		<div class="footer">
-			<p class="text-right text-white font-weight-bold px-3 py-2 m-0">
-				Document Tracking Software
-			</p>
-		</div>
-	</body>
+	</div>
 
-	<!-- BootstrapJS -->
-	<script
-		src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-		crossorigin="anonymous"
-	></script>
-	<script
-		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-		crossorigin="anonymous"
-	></script>
-	<script
-		src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-		crossorigin="anonymous"
-	></script>
+	<!-- Main content -->
+	<div class="main container pt-5">
+		<div class="row notifications">
+			<div class="col-lg-6 documents mt-3 mb-5">
+				<div class="row">
+					<div class="col-4 document new-documents">
+						<div class="wrapper d-flex justify-content-center align-items-center mb-2">
+							<h3 class="count h1 font-weight-bold m-0 mr-2">8</h3>
+							<img src="./img/bell.png" alt="New Documents Icon" class="img-fluid" />
+						</div>
+						<p class="text-center">NEW DOCUMENTS</p>
+					</div>
+					<div class="col-4 document delayed-documents">
+						<div class="wrapper d-flex justify-content-center align-items-center mb-2">
+							<h3 class="count h1 font-weight-bold m-0 mr-2">10</h3>
+							<img src="./img/alert.png" alt="New Documents Icon" class="img-fluid" />
+						</div>
+						<p class="text-center">DELAYED DOCUMENTS</p>
+					</div>
+					<div class="col-4 document new-attachments">
+						<div class="wrapper d-flex justify-content-center align-items-center mb-2">
+							<h3 class="count h1 font-weight-bold m-0 mr-2">15</h3>
+							<img src="./img/attach.png" alt="New Documents Icon" class="img-fluid" />
+						</div>
+						<p class="text-center">NEW ATTACHMENTS</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 days text-center mb-5">
+				<div class="row align-items-stretch h-100">
+					<div class="col-4 day today">
+						<div class="circle d-flex justify-content-center align-items-center h-100 w-100 m-auto">
+							<div class="wrapper">
+								<h3 class="count h1 font-weight-bold m-0 mr-2">12</h3>
+								<p class="text-center">TODAY</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-4 day 7-days">
+						<div class="circle d-flex justify-content-center align-items-center h-100 w-100 m-auto">
+							<div class="wrapper">
+								<h3 class="count h1 font-weight-bold m-0 mr-2">29</h3>
+								<p class="text-center">7 DAYS</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-4 day 30-days">
+						<div class="circle d-flex justify-content-center align-items-center h-100 w-100 m-auto">
+							<div class="wrapper">
+								<h3 class="count h1 font-weight-bold m-0 mr-2">88</h3>
+								<p class="text-center">30 DAYS</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row tables mb-5">
+			<div class="col-lg-6">
+				<table class="pending table table-striped">
+					<thead>
+						<tr>
+							<th class="h3 pl-0">Pending</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>CORR00001556 - Memo for work schedule changes</td>
+						</tr>
+						<tr>
+							<td>CORR00001557 - Memo for recent changes on work attire</td>
+						</tr>
+						<tr>
+							<td>CORR00001577 - Letter for Department Head (III)</td>
+						</tr>
+						<tr>
+							<td>CORR00001556 - Letter for Structural Team</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="col-lg-6">
+				<table class="in-progress table table-striped">
+					<thead>
+						<tr>
+							<th class="h3 pl-0">In Progress</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>RFI00001122 - Request to review recent plan changes</td>
+						</tr>
+						<tr>
+							<td>RFI00001123 - Request for Information for ABP Tower II</td>
+						</tr>
+						<tr>
+							<td>RFI00001155 - Request for Information re: PA Building</td>
+						</tr>
+						<tr>
+							<td>RFI00001156 - Request to review recent schedule changes</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="approved-documents mb-5">
+			<h3 class="h3">Approved Documents</h3>
+			<div class="row approved-doc-list">
+				<div class="col-sm-6 col-lg-3 approved-doc-item mb-3">
+					<div class="wrapper text-center p-3 rounded">
+						<div class="img-wrapper p-3 mb-2">
+							<img src="./img/stamp.png" alt="" class="img-fluid" />
+						</div>
+						<a class="doc-title font-weight-bold text-primary">DOC000001996</a>
+						<p class="remarks font-weight-bold">Approved with Comments</p>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3 approved-doc-item mb-3">
+					<div class="wrapper text-center p-3 rounded">
+						<div class="img-wrapper p-3 mb-2">
+							<img src="./img/stamp.png" alt="" class="img-fluid" />
+						</div>
+						<a class="doc-title font-weight-bold text-primary">CORR000001957</a>
+						<p class="remarks font-weight-bold">Approved with Comments</p>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3 approved-doc-item mb-3">
+					<div class="wrapper text-center p-3 rounded">
+						<div class="img-wrapper p-3 mb-2">
+							<img src="./img/stamp.png" alt="" class="img-fluid" />
+						</div>
+						<a class="doc-title font-weight-bold text-primary">SI000001996</a>
+						<p class="remarks font-weight-bold">Approved without Comments</p>
+					</div>
+				</div>
+				<div class="col-sm-6 col-lg-3 approved-doc-item mb-3">
+					<div class="wrapper text-center p-3 rounded">
+						<div class="img-wrapper p-3 mb-2">
+							<img src="./img/stamp.png" alt="" class="img-fluid" />
+						</div>
+						<a class="doc-title font-weight-bold text-primary">SCHED000001996</a>
+						<p class="remarks font-weight-bold">Approved with Comments</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Footer -->
+	<div class="footer">
+		<p class="text-right text-white px-3 py-2 m-0">
+			Document Tracking Software
+		</p>
+	</div>
+</body>
 
-	<!-- Custom jquery -->
-	<script src="./js/custom.js"></script>
+<!-- BootstrapJS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+	integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+	integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+	integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<!-- Custom jquery -->
+<script src="./js/custom.js"></script>
+
 </html>
