@@ -1,0 +1,33 @@
+@import "../../styles";
+
+.ui.menu .item,
+.ui.menu .item .header {
+    color: #color[white];
+}
+
+.ui {
+    &.menu {
+        background-color: #color[primary];
+        height: 55px;
+        z-index: 1001;
+    }
+
+    .profile-dropdown{
+        border: solid 2px #color[blue];
+
+        .item {
+            text-transform: uppercase !important;
+
+            i {
+                color: gray;
+            }
+        }
+    }
+
+    .title {
+        border-left: solid 3px #color[white];
+        height: calc(100% - 8px);
+        margin-top: 4px;
+        margin-bottom: 4px;
+    }
+}

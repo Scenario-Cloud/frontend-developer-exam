@@ -1,0 +1,14 @@
+<div class="ui basic vertical segment documents">
+    <h3 class="ui header">{{header}}</h3>
+    <div class="ui four doubling cards">
+        <div *ngFor="let doc of documents" class="ui card">
+            <img src="/assets/{{doc.image}}">
+            <div class="content">
+                <div class="ui center aligned small header mb-0" href="#">{{doc.name}}</div>
+                <div class="center aligned meta">
+                    <a>{{doc.remarks}}</a>
+                </div>           
+            </div>
+        </div>
+    </div>
+</div>

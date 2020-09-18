@@ -1,0 +1,14 @@
+<div>
+    <app-header (hovered)="acceptData($event)"></app-header>
+    <div *ngIf="dimmerVisibility" class="ui active dimmer"></div>
+    <div class="ui container main-content pb-4">
+        <div class="ui basic vertical segment pt-3 pb-1">            
+            <app-notifications></app-notifications>
+        </div>
+        <div class="ui basic vertical segment pb-3">
+            <app-tasks></app-tasks>
+        </div>
+        <app-documents></app-documents>
+    </div>
+    <app-footer></app-footer>
+</div>

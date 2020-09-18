@@ -1,0 +1,27 @@
+<div class="ui stackable grid notifications">
+    <div class="eight wide column">
+        <div class="ui three column grid">
+            <div *ngFor="let item of notifications" class="column">
+                <div class="item">
+                    <h1 class="ui center aligned header">{{item.count}} <i class="big {{item.icon}} icon"></i></h1>
+                    <div class="center aligned sub header">{{item.label}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="eight wide column circles">
+        <div class="ui three column grid">
+            <div class="row">
+                <div *ngFor="let day of days" class="column">
+                    <div class="ui circular segment">
+                        <h1 class="ui header">
+                            {{day.count}}
+                            <div class="sub header">{{day.label}}</div>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <i class="large info circle icon"></i>
+    </div>
+</div>

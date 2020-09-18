@@ -1,0 +1,22 @@
+<div class="ui stackable grid tasks">
+    <div class="eight wide column">
+        <h3 class="ui header">{{pendingHeader}}</h3>
+        <table class="ui celled striped very basic table">
+            <tbody>
+                <tr *ngFor="let item of pending">
+                    <td>{{item.taskCode}} - {{item.desc}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="eight wide column">
+        <h3 class="ui header">{{inProgressHeader}}</h3>
+        <table class="ui celled striped very basic table">
+            <tbody>
+                <tr *ngFor="let item of inProgress">
+                    <td>{{item.taskCode}} - {{item.desc}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

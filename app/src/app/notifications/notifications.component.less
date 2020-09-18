@@ -1,0 +1,45 @@
+@import "../../styles";
+
+.ui.notifications {
+    .item {
+        i {
+            &.bell { color: #color[blue]; }
+
+            &.triangle { color: #color[red]; }
+
+            &.paperclip { color: #color[green]; }
+        }
+
+        .ui.header { color: #color[gray-2]; }
+
+        .sub.header {
+            color: #color[gray];
+            text-transform: uppercase;
+            text-align: justify;
+        }
+    }
+
+    .circles {        
+        .ui.circular {
+            height: 140px;
+            width: 140px;
+            border: solid 5px #color[primary];
+
+            .ui.header {
+                font-size: 3em;
+            }
+
+            .sub.header {
+                color: #color[gray];
+                white-space: nowrap;
+            }
+        }
+
+        .info.circle {
+            position: absolute;
+            top: 0;
+            right: 0;
+            color: #color[blue];
+        }
+    }
+}

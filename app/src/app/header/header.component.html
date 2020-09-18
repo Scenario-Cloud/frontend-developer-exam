@@ -1,0 +1,22 @@
+<div class="ui fixed menu">
+    <div class="ui container">
+        <a class="header item px-0"><i class="big bars icon"></i></a>
+        <a class="item"><img class="logo" src="{{logo}}"></a>
+        <a href="#" class="header item title">
+            {{title}}
+        </a>
+        <div class="ui simple dropdown item right floated px-0" (mouseover)="openDropdown()" (mouseout)="closeDropdown()">
+            <img class="ui mini circular image mr-3" src="{{accountDetails.image}}">
+            <div class="content">
+                <h5 class="ui header">
+                    {{accountDetails.name}}
+                    <div class="sub header">{{accountDetails.position}}</div>
+                </h5>
+            </div>
+            <i class="big caret down icon"></i>
+            <div class="menu profile-dropdown">
+                <a *ngFor="let menu of dropdown" class="item" href="#"><i class="{{menu.icon}}"></i>{{menu.name}}</a>
+            </div>
+        </div>
+    </div>
+</div>
