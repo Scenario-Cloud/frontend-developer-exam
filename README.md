@@ -20,6 +20,10 @@ git checkout -b juan.c.delacruz
 
 There is mockup included in this project located at: /app/designs directory. Your goal is to come up with a UI based on those designs. You may use any UI frameworks and tools you are comfortable with. UI Data are also part of the mockup - you could just use any static data (ea. hard-coded data or static JSON data) and you don't need to do any server-side logic. 
 
+For Full Stack Developer Applicants:
+The App should be able to connect to API Endpoints to list down the Document Details.
+
+
 BONUS points:
 Manage to make the UI responsive.
 
